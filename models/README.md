@@ -1,0 +1,1 @@
+Note that you may have to download shape_predictor_68_face_landmarks.dat from web by yourself since it is over 100MB which is not supported to upload in github

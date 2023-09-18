@@ -3,10 +3,10 @@ This project focuses on detecting facial expressions, specifically around the mo
 
 **Table of Contents**
 Installation
+Sample Output
 Usage
 Project Structure
 Model Architecture
-Output
 
 **Installation**
 1.Clone the repository:
@@ -17,6 +17,13 @@ cd Face_Expression_Detection
 
 3.Install required libraries:
 pip install -r requirements.txt
+
+**Sample Output**
+The output images will have a green rectangle around the mouth region, with a label depicting the detected expression.
+Before Processing:
+![](input_images/3.jpg)
+After Processing:
+![](output_images/3.jpg)
 
 **Usage**
 1.Place images you want to test in the input_images folder. Images should be named sequentially starting from 0.jpg.
@@ -44,7 +51,5 @@ Fully Connected Layer (128x5x5 to 1024).
 Fully Connected Layer (1024 to 128).
 Output Layer (128 to number of classes).
 
-**Output**
-The output images will have a green rectangle around the mouth region, with a label depicting the detected expression.
 
 
