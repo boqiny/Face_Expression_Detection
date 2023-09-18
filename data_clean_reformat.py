@@ -16,14 +16,14 @@ def listfiles(rootDir,rename=False):
             try:
                 src = cv2.imread(filepath,1)
                 print("src=",filepath,src.shape)
-                os.remove(filepath) #删除原来图片
+                os.remove(filepath) #delete original photo
                 if rename:
-                    cv2.imwrite(os.path.join(root,str(num)+".jpg"),src) #写入新的图片，重新命名
+                    cv2.imwrite(os.path.join(root,str(num)+".jpg"),src) #write and rename new image
                     num = num + 1
                 else:
-                    cv2.imwrite(os.path.join(root,fileid+".jpg"),src) #写入新的图片，名字不变
+                    cv2.imwrite(os.path.join(root,fileid+".jpg"),src) #write new image
             except:
-                os.remove(filepath) #去除损坏图片
+                os.remove(filepath) #remove broken images
                 continue
 
 listfiles(sys.argv[1],rename=True)
